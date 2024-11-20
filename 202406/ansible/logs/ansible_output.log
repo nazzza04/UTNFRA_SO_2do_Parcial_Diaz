@@ -1,0 +1,179 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 21:18:57,596 p=13081 u=diazn n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:18:57,627 p=13081 u=diazn n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:18:58,434 p=13081 u=diazn n=ansible | PLAY [all] *******************************************************************************************
+2024-11-19 21:18:58,434 p=13081 u=diazn n=ansible | skipping: no hosts matched
+2024-11-19 21:18:58,434 p=13081 u=diazn n=ansible | PLAY RECAP *******************************************************************************************
+2024-11-19 21:20:18,872 p=13096 u=diazn n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:20:18,875 p=13096 u=diazn n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:20:19,034 p=13096 u=diazn n=ansible | PLAY [localhost] *************************************************************************************
+2024-11-19 21:20:19,127 p=13096 u=diazn n=ansible | TASK [Gathering Facts] *******************************************************************************
+2024-11-19 21:20:20,780 p=13096 u=diazn n=ansible | ok: [localhost]
+2024-11-19 21:20:20,797 p=13096 u=diazn n=ansible | TASK [include_role : 2do_parcial] ********************************************************************
+2024-11-19 21:20:20,837 p=13096 u=diazn n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/diazn/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 3, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+tasks file for 2do_parcial
+- name: Crear directorio /tmp/2do_parcial/alumnos
+      ^ here
+
+2024-11-19 21:21:26,525 p=13201 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:21:26,529 p=13201 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:21:26,685 p=13201 u=root n=ansible | PLAY [localhost] *************************************************************************************
+2024-11-19 21:21:26,690 p=13201 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2024-11-19 21:21:27,857 p=13201 u=root n=ansible | ok: [localhost]
+2024-11-19 21:21:27,873 p=13201 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************
+2024-11-19 21:21:27,891 p=13201 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/diazn/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 3, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+tasks file for 2do_parcial
+- name: Crear directorio /tmp/2do_parcial/alumnos
+      ^ here
+
+2024-11-19 21:27:13,126 p=13333 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:27:13,130 p=13333 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:27:13,285 p=13333 u=root n=ansible | PLAY [localhost] *************************************************************************************
+2024-11-19 21:27:13,290 p=13333 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2024-11-19 21:27:14,264 p=13333 u=root n=ansible | ok: [localhost]
+2024-11-19 21:27:14,280 p=13333 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************
+2024-11-19 21:27:14,301 p=13333 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/diazn/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 3, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+tasks file for 2do_parcial
+- name: Crear directorio /tmp/2do_parcial/alumnos
+      ^ here
+
+2024-11-19 21:31:05,523 p=13461 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:31:05,527 p=13461 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:31:05,685 p=13461 u=root n=ansible | PLAY [localhost] *************************************************************************************
+2024-11-19 21:31:05,691 p=13461 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2024-11-19 21:31:06,669 p=13461 u=root n=ansible | ok: [localhost]
+2024-11-19 21:31:06,685 p=13461 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************
+2024-11-19 21:31:06,704 p=13461 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/diazn/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 3, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+tasks file for 2do_parcial
+- name: Crear directorio /tmp/2do_parcial/alumnos
+      ^ here
+
+2024-11-19 21:35:08,429 p=13602 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:35:08,433 p=13602 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:35:08,598 p=13602 u=root n=ansible | PLAY [localhost] *************************************************************************************
+2024-11-19 21:35:08,605 p=13602 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2024-11-19 21:35:09,637 p=13602 u=root n=ansible | ok: [localhost]
+2024-11-19 21:35:09,653 p=13602 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************
+2024-11-19 21:35:09,672 p=13602 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/home/diazn/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/defaults/main.yml': line 12, column 6, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+#Comentarios sobre las variables (si deseas dejarlos)
+IP: {{ ip }}
+     ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2024-11-19 21:39:45,728 p=13729 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 21:39:45,732 p=13729 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2024-11-19 21:39:45,887 p=13729 u=root n=ansible | PLAY [localhost] *************************************************************************************
+2024-11-19 21:39:45,893 p=13729 u=root n=ansible | TASK [Gathering Facts] *******************************************************************************
+2024-11-19 21:39:46,882 p=13729 u=root n=ansible | ok: [localhost]
+2024-11-19 21:39:46,899 p=13729 u=root n=ansible | TASK [include_role : 2do_parcial] ********************************************************************
+2024-11-19 21:39:46,920 p=13729 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/diazn/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 3, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+tasks file for 2do_parcial
+- name: Crear directorio /tmp/2do_parcial/alumnos
+      ^ here
+

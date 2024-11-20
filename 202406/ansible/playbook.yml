@@ -1,0 +1,28 @@
+---
+- hosts: localhost
+  vars:
+    nombre: "tu-nombre"
+    apellido: "tu-apellido"
+    division: "tu-division"
+    ip: "tu-ip"
+    distro: "tu-distro"
+    cores: "tu-cantidad-de-cores"
+
+  tasks:
+    
+    - include_role:
+        name: 2do_parcial
+
+    
+    - name: "Otra tarea"
+      debug:
+        msg: "Después de la ejecución del rol"
+
+    - name: "Configurar sudoers para 2PSupervisores sin contraseña"
+      become: true  # Esta línea permite ejecutar la tarea con sudo
+      lineinfile:
+        path: /etc/sudoers
+        line: '%2PSupervisores ALL=(ALL) NOPASSWD: ALL'
+        validate: '/usr/sbin/visudo -cf %s'
+
+

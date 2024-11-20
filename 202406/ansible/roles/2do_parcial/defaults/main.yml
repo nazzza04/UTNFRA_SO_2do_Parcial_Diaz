@@ -1,0 +1,10 @@
+---
+# defaults file for 2do_parcial
+
+nombre: "Nazareno"
+apellido: "Diaz"
+division: "113"
+ip: "10.0.2.15."
+distro: "Ubuntu 24.04.1 LTS (Noble Numbat)"
+cores: "2"
+
